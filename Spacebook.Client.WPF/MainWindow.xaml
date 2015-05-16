@@ -1,0 +1,27 @@
+﻿<Window x:Class="Spacebook.Client.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:SpaceControls="clr-namespace:Spacebook.Client.WPF"
+        Title="MainWindow" Height="480" Width="640">
+    <Grid>
+        <StackPanel>
+            <Grid VerticalAlignment="Top" Name="Header" Height="70" Background="Khaki">
+                <TextBlock Text="SpaceBook" FontSize="40" />
+            </Grid>
+            <ItemsControl>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <SpaceControls:Comment />
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+        
+        <!-- Footer -->
+        <Grid VerticalAlignment="Bottom" Name="Footer" Height="20" Background="Turquoise">
+            <TextBlock Text="(c) 2015 Ballance IT - Chris Ballance" FontSize="14" />
+        </Grid>
+    </Grid>
+</Window>
