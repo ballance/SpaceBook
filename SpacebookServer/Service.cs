@@ -10,7 +10,7 @@ namespace SpacebookServer
     {
         static void Main(string[] args)
         {
-            var url = "http://+:8080";
+            var url = "http://localhost:8080";
 
             using (WebApp.Start<Startup>(url))
             {
